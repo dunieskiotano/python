@@ -61,10 +61,16 @@ export class HomeComponent extends React.Component {
             </ul>
           </div>
         </div>
-        <img src={shopping} alt="shopping" className="image-center"></img>
 
         <div className="container">
-         
+          <img src={shopping} alt="shopping" className="image-center"></img>
+          <div className="center-text">
+            <span className="heading">Welcome to Paradise Stores</span>
+            <br />
+            <span className="subheading">
+              When buying becomes an unforgettable experience
+            </span>
+          </div>
           <footer>
             <span>© 2020 Paradise Stores. All Rights Reserved</span>
             <br />
