@@ -72,7 +72,7 @@ export class HomeComponent extends React.Component {
             </span>
           </div>
           <footer>
-            <span>© 2020 Paradise Stores. All Rights Reserved</span>
+            <span>© 2020 Paradise Stores. All Rights Reserved</span>Hi
             <br />
             <span>
               <FaYoutube /> <FaTwitter /> <FaFacebook /> <FaInstagram />
