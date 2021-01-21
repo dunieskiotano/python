@@ -93,7 +93,3 @@ for dictionary in dictionaryList:
 #     print(f'{key}: {value}')
 
 
-keysList = ['FirstName','LastName','Age','Phone', 'GPA', 'Subject', 'Major']
-valuesList = ['Aicha', 'Diallo', 30, '1234567890', 3.7, 'Math', 'Computer Science']
-
-personInfoDictionary = {}
