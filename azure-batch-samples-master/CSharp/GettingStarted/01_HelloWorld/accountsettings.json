@@ -1,0 +1,8 @@
+﻿{
+  "batchAccountName": "azdobatch",
+  "batchAccountKey": "KQ7nXeNJpr8V2/tHAGJ1AMTR/tod4RDAjIR9QxoA9ZIw35Kdf1h0lGnJiHV0H5YzyTb/4XZ76b+FJUqhVs70ng==",
+  "batchServiceUrl": "https://azdobatch.eastus.batch.azure.com",
+  "storageAccountName": "azdobatchstorage",
+  "storageAccountKey": "30KuCaG+oo01YruMi6azQsT9rY+1O0qdLDYoi68RCTYuRA3mlUJx+bxFNtXIhh9s15IvLRYZ49ew5CRilXNv2w==",
+  "storageServiceUrl": "core.windows.net"
+}
