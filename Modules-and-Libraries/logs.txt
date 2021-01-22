@@ -1,0 +1,4 @@
+
+User dunieski tried to log in on 2021-01-22 11:47:27.007206 - Result: Failure
+User carlos logged in on 2021-01-22 11:48:02.560906 - Result: Success
+User dunieso tried to log in on 2021-01-22 11:48:57.887234 - Result: Failure
