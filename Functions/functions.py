@@ -1,6 +1,7 @@
 import os
 from os import system
 
+
 system('clear')
 
 # this is a very simple function, no arguments
@@ -82,3 +83,19 @@ print(add(10, 11))
 # fabs()
 # sum()
 # dict()
+
+myString = 'Hello how are you?'
+newString = myString.split(" ")
+print(newString)
+for word in newString:
+    print(word)
+print(type(newString))
+#() => tuples
+# {} => dictionaries and sets, 
+# [] => lists
+# (...[]) => arrays
+
+
+
+
+
