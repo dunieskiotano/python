@@ -1,23 +1,11 @@
 import mysql.connector, os
 from os import environ
 from mysql.connector import connect
+import connection as c
 
-
-# conn = connect(
-#     host=environ.get('DB_URL'),
-#     user=environ.get('DB_USER'),
-#     password=environ.get('DB_PASSWORD'),
-#     database=environ.get('DB_NAME')
-# )
- 
 
 def readStudentInfo():  
-    conn = connect(
-    host=environ.get('DB_URL'),
-    user=environ.get('DB_USER'),
-    password=environ.get('DB_PASSWORD'),
-    database=environ.get('DB_NAME')
-)  
+    conn = c.returnConnection()
     try:
         cursor = conn.cursor()
         cursor.execute('SELECT * FROM student')
@@ -34,21 +22,17 @@ def readStudentInfo():
         print('Error while fetching data from MySQL', error)
 
 def insertStudentInfo(fname, lname, age, phone):
-    conn = connect(
-    host=environ.get('DB_URL'),
-    user=environ.get('DB_USER'),
-    password=environ.get('DB_PASSWORD'),
-    database=environ.get('DB_NAME')
-)
+    conn = c.returnConnection()
     try:
         cursor = conn.cursor()
         cursor.execute(f"INSERT INTO student (fname, lname, age, phone) VALUES ('{fname}', '{lname}', {age}, '{phone}')")
         conn.commit()
+        readStudentInfo()
         cursor.close() 
         conn.close() 
     except(Exception, mysql.connector.Error) as error:
         print('Error while fetching data from MySQL', error)
-    readStudentInfo()
+    
 
 # ******** For Windows **********
 # First install python-dotenv
