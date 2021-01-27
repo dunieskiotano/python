@@ -21,6 +21,8 @@ def readStudentInfo():
     except(Exception, mysql.connector.Error) as error:
         print('Error while fetching data from MySQL', error)
 
+
+# function to insert info into student table
 def insertStudentInfo(fname, lname, age, phone):
     conn = c.returnConnection()
     try:
